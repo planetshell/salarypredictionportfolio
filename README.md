@@ -5,4 +5,7 @@ The purpose of this project is to build a predictive model that will make salary
 
 
 ## Discover
-The dataset was 
+The salary dataset consist of the following csv files:
+- train_feature.csv
+- train_salaries.csv
+- test_feature.csv

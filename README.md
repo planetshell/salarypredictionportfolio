@@ -10,4 +10,4 @@ As previously mentioned, the dataset is a combination of 1 million job roles alo
 - test_feature.csv
 
 I will load, clean and perform some explorary data analysis(EDA) on the data before continuing the modeling process
-<img src="images/target_salary.png" width = 600, height =600>
+<img src="images/target_salary.png" width = 600, height =300>

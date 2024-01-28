@@ -46,3 +46,14 @@ The results above show the following:
 - Negative coorelation between milesFromMetropolis and salary
 
 The results above makes sense. In the real world, salaries are generally higher with more advance job roles or more advance degrees.In addition, salaries are generally higher with more years of experience and lower with distance from the city.
+
+### 2.4 Establish a Baseline
+In this section I created a simple model that will be the baseline for results from more advance models. The model is create the I used the average salary as the baseline model and measure its efficacy using MSE matrics.
+### 2.5 Hypothesize a solution
+The MSE for the baseline model was calculated to be 1499.07. I will use the following models to improve the current baseline model's results.
+
+- Linear Regression
+- Random Forest Regressor
+- Gradient Boost Regressor
+
+I choose the 3 models above because the problem we are solving is a regression problem. This can be determined by simply examining the relationship between each feature variable and target in the dataset.The EDA show that there are linear relationships between each feature variable and the target. In addition, there's both positive and negative coorelation between the target variable (salary) and feature variables jobType, degree, major, industry, YearsExperience and milesFromMetropolis.

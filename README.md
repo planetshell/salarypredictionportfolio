@@ -9,7 +9,7 @@ As previously mentioned, the dataset is a combination of 1 million job roles alo
 - train_salaries.csv
 - test_feature.csv
 
-Combining the train feature and train target we get following dataframe
+Combining the feature and target variables we get following dataframe
 <img src="images/salary_dataset.png" width = 600, height = 200>
 
 The feature and target variables consist of the following:

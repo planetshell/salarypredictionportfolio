@@ -11,6 +11,10 @@ As previously mentioned, the dataset is a combination of 1 million job roles alo
 
 The feature and target variables consist of the following:
 
+Feature - [CompanyID, Degree, Major, milesFromMetroplis,yearsExperience]
 
+Target - [Salary]
+
+<img src="images/salary_dataset.png" width = 600, height =300>
 I will load, clean and perform some explorary data analysis(EDA) on the data before continuing the modeling process
 <img src="images/target_salary.png" width = 600, height =300>

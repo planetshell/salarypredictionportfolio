@@ -26,3 +26,8 @@ I will load, clean and perform some explorary data analysis(EDA) on the data bef
 
 ### 2.3 Explore Data EDA 
 <img src="images/target_salary.png" width = 600, height =300>
+<img src="images/feature_companyId.png" width = 600, height =300>
+<img src="images/feature_degree.png" width = 600, height =300>
+<img src="images/feature_jobType.png" width = 600, height =300>
+<img src="images/feature_industry.png" width = 600, height =300>
+<img src="images/feature_major.png" width = 600, height =300>

@@ -35,4 +35,14 @@ In this section, I summarize each feature variable and the target variable from 
 <img src="images/feature_milesFromMetropolis.png" width = 600, height =300>
 <img src="images/feature_yearsExperience.png" width = 600, height =300>
 
+The results above show the following:
+
+- No correlation between compandId and salary
+- Positive coorelation between jobType and salary.
+- Positive coorelation between degree and salary.
+- Positive coorelation between major and salary
+- Positive coorelation between industry and salary
+- Positive coorelation between yearsExperience and salary
+- Negative coorelation between milesFromMetropolis and salary
+
 The results above makes sense. In the real world, salaries are generally higher with more advance job roles or more advance degrees.In addition, salaries are generally higher with more years of experience and lower with distance from the city.

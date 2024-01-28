@@ -31,3 +31,5 @@ I will load, clean and perform some explorary data analysis(EDA) on the data bef
 <img src="images/feature_jobType.png" width = 600, height =300>
 <img src="images/feature_industry.png" width = 600, height =300>
 <img src="images/feature_major.png" width = 600, height =300>
+<img src="images/feature_milesFromMetropolis.png" width = 600, height =300>
+<img src="images/feature_yearsExperience.png" width = 600, height =300>

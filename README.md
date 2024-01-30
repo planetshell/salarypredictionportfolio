@@ -48,7 +48,7 @@ The results above show the following:
 The results above makes sense. In the real world, salaries are generally higher with more advance job roles or more advance degrees.In addition, salaries are generally higher with more years of experience and lower with distance from the city.
 
 ### 2.4 Establish a Baseline
-In this section I created a simple model that will be the baseline for results from more advance models. The model is create the I used the average salary as the baseline model and measure its efficacy using MSE matrics.
+In this section I created a simple model that will serve as the baseline for more advance models. The baseline model was established by taking the mean of the target(salary). I then measured its efficacy using MSE matrics.
 ### 2.5 Hypothesize a solution
 The MSE for the baseline model was calculated to be 1499.07. I will use the following models to improve the current baseline model's results.
 

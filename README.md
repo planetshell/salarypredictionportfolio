@@ -16,7 +16,7 @@ Combining the feature and target variables we get following dataframe
 
 The feature and target variables were identified as follows:
 
-#### Feature - [CompanyID, Degree, Major, milesFromMetroplis,yearsExperience]
+#### Feature - [ CompanyID, Degree, Major, milesFromMetroplis, yearsExperience ]
 
 #### Target - [Salary]
 

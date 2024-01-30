@@ -66,9 +66,9 @@ In this section, I used object oriented programming to build the models. I creat
 
 ### 3.1 Create Models
 The following model object were created and tested:
-LinearRegression()
-RandomForestRegressor()
-GradientBoostRegressor()
+- LinearRegression()
+- RandomForestRegressor()
+- GradientBoostRegressor()
 ### 3.2 Test Models
 ### 3.3 Feature Engineering
 ### 3.4 Select best Model 

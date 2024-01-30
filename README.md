@@ -58,7 +58,12 @@ The MSE for the baseline model was calculated to be 1499.07. I will use the foll
 
 I choose the 3 models above because the problem we are solving is a regression problem. This can be determined by simply examining the relationship between each feature variable and target in the dataset.The EDA show that there are linear relationships between each feature variable and the target. In addition, there's both positive and negative coorelation between the target variable (salary) and feature variables jobType, degree, major, industry, YearsExperience and milesFromMetropolis.
 
-## 3. Model Development 
+## 3. Model Development
+In this section, I used object oriented programming to build the models. I created the following classes:
+- Data class
+- Model class
+- Feature engineering class 
+
 ### 3.1 Create Models
 ### 3.2 Test Models
 ### 3.3 Feature Engineering

@@ -71,7 +71,7 @@ The following model object were created and tested:
 - GradientBoostRegressor()
 ### 3.2 Test Models
 Model result without feature engineers 
-
+<img src="images/Salary Prediction model results before feature engineering.png" width = 600, height =300>
 
 ### 3.3 Feature Engineering
 ### 3.4 Select best Model 

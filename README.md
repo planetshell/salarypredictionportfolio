@@ -82,12 +82,14 @@ The chart above shows the most important feature is "yearsExperience"
 
 ### 3.4 Tests Models
 #### Model results before feature engineering
-The table below shows that the MSE significantly lower with feature engineering applied to the dataset. 
-Again,the gradient Boost Regressor model perform the best with a MSE=313.29
 <img src="images/Screenshot 2024-01-30 192512.png" width = 500, height =100>
-
-
 The table below shows that the MSE significantly lower with feature engineering applied to the dataset. 
 Again,the gradient Boost Regressor model perform the best with a MSE=313.29
+
+
 <img src="images/feature importance after feature engineering.png" width = 600, height =300>
+The table below shows that the MSE significantly lower with feature engineering applied to the dataset. 
+Again,the gradient Boost Regressor model perform the best with a MSE=313.29
+
+
 ### 3.4 Select best Model 

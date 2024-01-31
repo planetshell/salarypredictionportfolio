@@ -1,7 +1,7 @@
 # Salary Prediction Project 
 
 ## 1. Define Problem
-The purpose of this project is to build a predictive model that can make salary predictions based on given job dispcriptions. With a salary dataset of 1 million job roles along with their associated salaries, I will follow the data science 4D framework of Define, Discover, Develop and Deploy to find the best model with lowest RMSE. 
+The purpose of this project is to build a predictive model that can make salary predictions based on given job dispcriptions. With a salary dataset of 1 million job roles along with their associated salaries, I will follow the data science 4D framework of Define, Discover, Develop and Deploy to find the best model with lowest mean square error (MSE). 
 
 ## 2. Data Discovery & Exploration
 
@@ -11,7 +11,7 @@ As previously mentioned, the dataset is a combination of 1 million job roles alo
 - train_salaries.csv
 - test_feature.csv
 
-Combining the feature and target variables we get following dataframe
+Combining data from train_feature.csv and train_salaries.csv, we get following raw dataframe
 <img src="images/salary_dataset.png" width = 600, height = 200>
 
 The feature and target variables were identified as follows:
@@ -21,11 +21,11 @@ The feature and target variables were identified as follows:
 #### Target - [Salary]
 
 ### 2.2 Clean Data 
-The data cleaning process shows there are no duplicates or missing data.However,statistical analysis on the target column(salary) shows there are 5 rows with 0 salary which indicate invalid data. I removed these rows from the dataset using clean_data().
-I will load, clean and perform some explorary data analysis(EDA) on the data before continuing the modeling process
+The data cleaning process shows there are no duplicates or missing data.However,statistical analysis on the target(salary) shows there were 5 rows with 0 salary which indicate invalid data. I removed these rows from the dataset using clean_data() helper function.
+I will now load, clean and perform some explorary data analysis(EDA) on the data before continuing the modeling process
 
 ### 2.3 Explore Data EDA 
-In this section, I summarize each feature variable and the target variable from the cleaned dataframe. I then looked for any correlation between each feature variable and the target variable
+In this section, I summarize each feature variable and the target variable from the cleaned dataframe. I then looked for any relationships between each feature variable and the target variable
 <img src="images/target_salary.png" Title = "Salary" width = 600, height =300>
 <img src="images/feature_companyId.png" width = 600, height =300>
 <img src="images/feature_degree.png" width = 600, height =300>
@@ -91,5 +91,6 @@ Again,the gradient Boost Regressor model perform the best with a MSE=313.29
 After applying group statistic to the data, the chart above now shows the most important feature is "Major" . 
 
 
-
 ### 3.4 Select best Model 
+After tuning and training all 3 models, we find that the gradient boost regressor was the performing model and will deployed to production  
+

@@ -14,10 +14,15 @@ As previously mentioned, the dataset is a combination of 1 million job roles alo
 Combining data from train_feature.csv and train_salaries.csv, we get following raw dataframe
 <img src="images/salary_dataset.png" width = 600, height = 200>
 
-The feature and target variables were identified as follows:
+The feature variables were identified as follows:
+- CompanyID
+- Degree
+- Major
+- milesFromMetroplis
+- yearsExperience)
 
-- Features( CompanyID, Degree, Major, milesFromMetroplis, yearsExperience)
-- Target(Salary)
+The target variable was identified as follows:
+- Salary
 
 ### 2.2 Clean Data 
 The data cleaning process reveal the following results:
@@ -91,9 +96,9 @@ Again,the gradient Boost Regressor model perform the best with a MSE=313.29
 
 
 <img src="images/feature importance after feature engineering.png" width = 600, height =300>
-After applying group statistic to the data, the chart above now shows the most important feature is "Major" . 
+After applying group statistic to the data, the chart above now shows the most important feature is the "Group_Mean" . 
 
 
 ### 3.4 Select best Model 
-After tuning and training all 3 models, we find that the gradient boost regressor was the performing model and will deployed to production  
+After tuning and training all 3 models, we find that the gradient boost regressor was the performing model and can be deployed to production  
 

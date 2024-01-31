@@ -87,6 +87,7 @@ The table above show that the gradient Boost Regressor model perform the best wi
 The chart above shows the most important feature is "yearsExperience"  
 
 ### 3.3 Feature Engineering
+In this section, I will use group statistics to improve the model's overall efficacy. I grouped all categorical variables and then calculate each groups mean, max, min, median and standard deviation. These values were then added to the original dataset.   
 
 ### 3.4 Tests Models
 #### Model results before feature engineering

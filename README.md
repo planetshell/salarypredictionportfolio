@@ -72,10 +72,10 @@ The following model object were created and tested:
 ### 3.2 Test Models
 Model result without feature engineers 
 <img src="images/Salary Prediction model results before feature engineering.png" width = 500, height =100>
-<img src="images/feature importance before feature engineering.png" width = 500, height =100>
+<img src="images/feature importance before feature engineering.png" width = 600, height =300>
 ### 3.3 Feature Engineering
 
 ### 3.4 Tests Models after applying Feature Engineering 
 <img src="images/Salary Prediction model results before feature engineering.png" width = 500, height =100>
-<img src="images/Salary Prediction model results before feature engineering.png" width = 600, height =300>
+<img src="images/Salary Prediction model results before feature engineering.png" width = 500, height =100>
 ### 3.4 Select best Model 

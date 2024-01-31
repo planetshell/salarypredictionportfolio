@@ -70,9 +70,14 @@ The following model object were created and tested:
 - RandomForestRegressor()
 - GradientBoostRegressor()
 ### 3.2 Test Models
-Model result without feature engineers 
+#### Model results before feature engineering
+
 <img src="images/Salary Prediction model results before feature engineering.png" width = 500, height =100>
+The table above show that the gradient Boost Regressor model perform the best with a MSE=367  
+
 <img src="images/feature importance before feature engineering.png" width = 600, height =300>
+The chart above shows the most important feature is "yearsExperience"  
+
 ### 3.3 Feature Engineering
 
 ### 3.4 Tests Models after applying Feature Engineering 

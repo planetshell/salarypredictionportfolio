@@ -20,12 +20,12 @@ The feature and target variables were identified as follows:
 - Target(Salary)
 
 ### 2.2 Clean Data 
-The data cleaning process shows following results:
+The data cleaning process reveal the following results:
 - No duplicates data
 - No missing data
-- Statistical analysis on the target(salary) shows there were 5 rows with 0 salaries which indicates invalid data
+- Statistical analysis on the target(salary) shows there are 5 rows in dataset with 0 salaries which indicates invalid data
 
-However,statistical analysis on the target(salary) shows there were 5 rows with 0 salary which indicate invalid data. I removed these rows from the dataset using clean_data() helper function.I will now load, clean and perform some explorary data analysis(EDA) on the data before continuing the modeling process
+Based on the results above, I only needed to remove the 5 rows with 0 salaries from the dataset.I will now perform some explorary data analysis(EDA) on the cleaned dataset before moving on to the modeling stage. 
 
 ### 2.3 Explore Data EDA 
 In this section, I summarize each feature variable and the target variable from the cleaned dataframe. I then looked for any relationships between each feature variable and the target variable

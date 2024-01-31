@@ -90,7 +90,7 @@ The chart above shows the most important feature is "yearsExperience"
 In this section, I will use group statistics to improve the model's overall efficacy. I grouped all categorical variables and then calculate each groups mean, max, min, median and standard deviation. These values were then added to the original dataset.   
 
 ### 3.4 Tests Models
-#### Model results before feature engineering
+#### Model results after feature engineering
 <img src="images/Screenshot 2024-01-30 192512.png" width = 500, height =100>
 The table above shows that the MSE was significantly lowered with feature engineering applied to the dataset. 
 Again,the gradient Boost Regressor model perform the best with a MSE=313.29

@@ -1,7 +1,7 @@
 # Salary Prediction Project 
 
 ## 1. Define Problem
-The purpose of this project is to build a predictive model that can make salary predictions based on given job dispcriptions. With a salary dataset of 1 million job roles along with their associated salaries, I will follow the data science 4D framework of Define, Discover, Develop and Deploy to find the best model with lowest RMSE. 
+The purpose of this project is to build a predictive model that can make salary predictions based on given job dispcriptions. With a salary dataset of 1 million job roles along with their associated salaries, I will follow the data science 4D framework of Define, Discover, Develop and Deploy to find the best model with lowest mean square error (MSE). 
 
 ## 2. Data Discovery & Exploration
 
@@ -11,21 +11,29 @@ As previously mentioned, the dataset is a combination of 1 million job roles alo
 - train_salaries.csv
 - test_feature.csv
 
-Combining the feature and target variables we get following dataframe
+Combining data from train_feature.csv and train_salaries.csv, we get following raw dataframe
 <img src="images/salary_dataset.png" width = 600, height = 200>
 
-The feature and target variables were identified as follows:
+The feature variables were identified as follows:
+- CompanyID
+- Degree
+- Major
+- milesFromMetroplis
+- yearsExperience)
 
-#### Feature - [ CompanyID, Degree, Major, milesFromMetroplis, yearsExperience ]
-
-#### Target - [Salary]
+The target variable was identified as follows:
+- Salary
 
 ### 2.2 Clean Data 
-The data cleaning process shows there are no duplicates or missing data.However,statistical analysis on the target column(salary) shows there are 5 rows with 0 salary which indicate invalid data. I removed these rows from the dataset using clean_data().
-I will load, clean and perform some explorary data analysis(EDA) on the data before continuing the modeling process
+The data cleaning process reveal the following results:
+- No duplicates data
+- No missing data
+- Statistical analysis on the target(salary) shows there are 5 rows in dataset with 0 salaries which indicates invalid data
+
+Based on the results above, I only needed to remove the 5 rows with 0 salaries from the dataset.I will now perform some explorary data analysis(EDA) on the cleaned dataset before moving on to the modeling stage. 
 
 ### 2.3 Explore Data EDA 
-In this section, I summarize each feature variable and the target variable from the cleaned dataframe. I then looked for any correlation between each feature variable and the target variable
+In this section, I summarize each feature variable and the target variable from the cleaned dataframe. I then looked for any relationships between each feature variable and the target variable
 <img src="images/target_salary.png" Title = "Salary" width = 600, height =300>
 <img src="images/feature_companyId.png" width = 600, height =300>
 <img src="images/feature_degree.png" width = 600, height =300>
@@ -70,8 +78,36 @@ The following model object were created and tested:
 - RandomForestRegressor()
 - GradientBoostRegressor()
 ### 3.2 Test Models
-Model result without feature engineers 
+#### Model results before feature engineering
+
 <img src="images/Salary Prediction model results before feature engineering.png" width = 500, height =100>
+The table above show that the gradient Boost Regressor model perform the best with a MSE=367  
+
+<img src="images/feature importance before feature engineering.png" width = 600, height =300>
+The chart above shows the most important feature is "yearsExperience"  
 
 ### 3.3 Feature Engineering
+In this section, I will use group statistics to improve the model's overall efficacy. I grouped all categorical variables and then calculate each groups mean, max, min, median and standard deviation. These values were then added to the original dataset.   
+
+### 3.4 Tests Models
+#### Model results after feature engineering
+<img src="images/Screenshot 2024-01-30 192512.png" width = 500, height =100>
+The table above shows that the MSE was significantly lowered with feature engineering applied to the dataset. 
+Again,the gradient Boost Regressor model perform the best with a MSE=313.29
+
+
+<img src="images/feature importance after feature engineering.png" width = 600, height =300>
+After applying group statistic to the data, the chart above now shows the most important feature is the "Group_Mean" . 
+
+
 ### 3.4 Select best Model 
+After tuning and training all 3 models, we find that the gradient boost regressor was the performing model and can be deployed to production  
+
+## 4. Model Deployment
+
+### 4.1 Automate Pipeline
+
+### 4.2 Deployment Solution
+
+
+

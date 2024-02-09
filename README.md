@@ -101,7 +101,7 @@ After applying group statistic to the data, the chart above now shows the most i
 
 
 ### 3.4 Select best Model 
-After tuning and training all 3 models, we find that the gradient boost regressor was the performing model and can be deployed to production  
+After tuning and training all 3 models, I found that gradient boost regressor was the best performing model and can be deployed to production  
 
 ## 4. Model Deployment
 
